@@ -1,0 +1,14 @@
+{
+    "source_dir": "G:/整理",
+    "target_dir": "G:/整理",
+    "move_files": true,
+    "include_subfolders": true,
+    "cleanup_enabled": true,
+    "check_duplicates": true,
+    "organize_by_month": "month",
+    "time_methods": [
+        true,
+        true,
+        true
+    ]
+}
