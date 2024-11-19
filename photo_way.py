@@ -188,7 +188,7 @@ class PhotoOrganizerGUI:
         
         self.logger = logging.getLogger('PhotoOrganizer')
         self.logger.info("程序启动")
-        self.logger.info(f"日志文件路径: {log_file}")  # 添加日志文件路径的记录
+        self.logger.info(f"日志文件路径: {log_file}")  # 添加日志文件路��的记录
 
     def log_message(self, message, level='info'):
         """优化的日志显示"""
@@ -196,7 +196,7 @@ class PhotoOrganizerGUI:
             # 获取当前时间
             current_time = datetime.now().strftime("%H:%M:%S")
             
-            # 根据不同类型的消���示格式
+            # 根据不同类型的消显示格式
             if "已移动:" in message or "已复制:" in message:
                 # 简化文件操作的显示
                 filename = os.path.basename(message.split("->")[1].strip())
@@ -368,7 +368,7 @@ class PhotoOrganizerGUI:
             result_log.append(f"时间获取方式: {', '.join(time_methods)}")
             
             # 加组织式息
-            organize_by = "���/月" if self.get_organize_by_month() == "month" else "年"
+            organize_by = "年/月" if self.get_organize_by_month() == "month" else "年"
             result_log.append(f"文件组织方式: {organize_by}")
             
             # 如果有处理失败的文件，添加详细信息
